@@ -32,12 +32,14 @@ class ThemeViewController: UIViewController {
             darkButton.setTitle(mainText, for: .normal)
             darkButton.setTitleColor(UIColor.white, for: .normal)
             navigationItem.title = mainText
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             view.backgroundColor = UIColor.black
         } else {
             mainText = "Dark Theme On"
             darkButton.setTitle(mainText, for: .normal)
             darkButton.setTitleColor(UIColor.black, for: .normal)
             navigationItem.title = mainText
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
             view.backgroundColor = UIColor.white
         }
         
